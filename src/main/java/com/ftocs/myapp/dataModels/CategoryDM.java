@@ -7,6 +7,7 @@ import com.google.gson.annotations.SerializedName;
 @Generated("com.robohorse.robopojogenerator")
 public class CategoryDM{
 
+
 	@SerializedName("IsSuccess")
 	private boolean isSuccess;
 
