@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <group >
+            <item
+                android:id="@+id/messages"
+                android:title="KINNO BOOKING"
+                android:icon="@drawable/d_kinnu"
+                />
+
+        </group>
+        <group >
+            <item
+                android:id="@+id/history"
+                android:title="ORDER HISTORY"
+                android:icon="@drawable/ic_message"
+                />
+
+        </group>
+
+        <group >
+            <item
+                android:id="@+id/edit_profile"
+                android:title="EDIT PROFILE"
+                android:icon="@drawable/ic_edit_profile"/>
+
+        </group>
+
+        <group >
+            <item
+                android:id="@+id/payment_info"
+                android:title="PAYMENT INFO"
+                android:icon="@drawable/ic_message"
+                />
+
+        </group>
+
+        <group >
+            <item
+                android:id="@+id/about_us"
+                android:title="ABOUT US"
+                android:icon="@drawable/ic_about_us"/>
+        </group>
+        <group >
+            <item
+                android:id="@+id/contact_us"
+                android:title="CONTACT US"
+                android:icon="@drawable/ic_contact_us"/>
+        </group>
+        <group android:checkableBehavior="single">
+            <item
+                android:id="@+id/share_app"
+                android:title="SHARE APP"
+                android:icon="@drawable/ic_share"/>
+        </group>
+
+        <group android:checkableBehavior="single">
+            <item
+                android:id="@+id/rate_app"
+                android:title="RATE APP"
+                android:icon="@drawable/ic_rate_app"/>
+        </group>
+
+        <group android:checkableBehavior="single">
+            <item
+                android:id="@+id/sign_out"
+                android:title="SIGN OUT"
+                android:icon="@drawable/ic_signout"/>
+        </group>
+
+        <group android:checkableBehavior="single">
+            <item
+                android:id="@+id/sign_in"
+                android:title="SIGN IN"
+                android:icon="@drawable/ic_signout"/>
+        </group>
+    </group>
+
+</menu>

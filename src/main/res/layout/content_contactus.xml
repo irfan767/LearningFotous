@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".uiActivities.ContactusActivity"
+    tools:showIn="@layout/activity_contactus">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="15dp">
+    
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:layout_marginBottom="15dp">
+       <ImageView
+           android:id="@+id/img_contact"
+           android:layout_width="30dp"
+           android:layout_height="30dp"
+           android:padding="5dp"
+           android:src="@drawable/ic_contact_red"/>
+       <TextView
+           android:id="@+id/tv_ContactNo"
+           android:layout_width="wrap_content"
+           android:layout_height="30dp"
+           android:gravity="center"
+           tools:text="03221234567"
+           android:fontFamily="@font/nunito_semibold"
+           android:textSize="15sp"
+           android:layout_marginLeft="15dp"
+           android:textColor="@color/md_black_1000"/>
+
+   </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="15dp">
+        <ImageView
+            android:padding="5dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_message_red"/>
+        <TextView
+            android:id="@+id/tv_Email"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:gravity="center"
+            tools:text="info@chicksdrive.com"
+            android:fontFamily="@font/nunito_semibold"
+            android:textSize="15sp"
+            android:layout_marginLeft="15dp"
+            android:textColor="@color/md_black_1000"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:padding="5dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_address_red"/>
+        <TextView
+            android:id="@+id/tv_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            android:fontFamily="@font/nunito_semibold"
+            android:textSize="15sp"
+            android:layout_marginLeft="15dp"
+            android:textColor="@color/md_black_1000"/>
+
+    </LinearLayout>
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".fragments.MapsActivity" />
+</LinearLayout>
+
+</RelativeLayout>

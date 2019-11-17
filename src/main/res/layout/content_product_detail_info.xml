@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+android:layout_marginTop="?actionBarSize"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".uiActivities.ProductDetailInfoActivity"
+    tools:showIn="@layout/activity_product_detail_info">
+
+
+
+
+    <com.daimajia.slider.library.SliderLayout
+        android:layout_below="@+id/animate_progress_bar"
+        android:id="@+id/slider_layout"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:scaleType="centerCrop" />
+    <TextView
+        android:layout_below="@+id/slider_layout"
+        android:id="@+id/tv_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="@color/md_black_1000"
+        android:padding="15dp"
+        tools:text="sdjbskjzbaskbsakbvbljsbvbjklvbskvbjzxvbsjvbsjvbjvbJKvbzm"
+        android:fontFamily="@font/nunito_semibold"/>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        android:indeterminateTint="@color/md_white_1000"/>
+    <Button
+        android:id="@+id/btn_buy"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_marginTop="18dp"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp"
+        android:background="@drawable/bg_border_rectangle"
+        android:fontFamily="@font/nunito_bold"
+        android:text="BUY / خریدنے"
+        android:textColor="@color/md_white_1000"
+        android:textSize="18dp" />
+</RelativeLayout>

@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ftocs.myapp">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/ic_logo"
+        android:supportsRtl="true"
+        android:usesCleartextTraffic="true"
+        android:theme="@style/AppTheme">
+
+        <activity
+            android:name=".uiActivities.BookingActivity"
+            android:label="@string/title_activity_booking"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".SplashActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".uiActivities.HomeActivity"
+            android:label="@string/title_activity_home"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".uiActivities.LoginActivity"
+            android:label="Loh in"
+            android:parentActivityName=".uiActivities.HomeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".uiActivities.HomeActivity" />
+        </activity>
+        <activity
+            android:name=".uiActivities.SelectionSignupActivity"
+            android:label="Selection Sign up"
+            android:parentActivityName=".uiActivities.LoginActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".uiActivities.LoginActivity" />
+        </activity>
+        <activity
+            android:name=".uiActivities.SignupActivity"
+            android:label="Sign up"
+            android:parentActivityName=".uiActivities.SelectionSignupActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".uiActivities.SelectionSignupActivity" />
+        </activity>
+        <activity
+            android:name=".uiActivities.RequestFormActivity"
+            android:label="Sign up"
+            android:parentActivityName=".uiActivities.SelectionSignupActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".uiActivities.SelectionSignupActivity" />
+        </activity>
+        <activity
+            android:name=".uiActivities.ForgetPassword"
+            android:label="Forgot Password"
+            android:parentActivityName=".uiActivities.LoginActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="uiActivities.LoginActivity" />
+        </activity>
+        <activity
+            android:name=".uiActivities.AboutUsActivity"
+            android:label="About Us"
+            android:parentActivityName=".uiActivities.HomeActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="uiActivities.HomeActivity" />
+        </activity>
+        <activity
+            android:name=".uiActivities.PaymentInfoActivity"
+            android:label="Payment info"
+            android:parentActivityName=".uiActivities.HomeActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="uiActivities.HomeActivity" />
+        </activity>
+        <activity
+            android:name=".uiActivities.ContactusActivity"
+            android:label="Contact Us"
+            android:parentActivityName=".uiActivities.HomeActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="uiActivities.HomeActivity" />
+        </activity>
+        <activity
+            android:name=".uiActivities.ProductCategoryActivity"
+            android:label="@string/title_activity_product_category"
+            android:parentActivityName=".uiActivities.HomeActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.ftocs.myapp.uiActivities.HomeActivity" />
+        </activity>
+        <activity
+            android:name=".uiActivities.ProductCategoryListActivity"
+            android:label="ProductCategoryList"
+            android:parentActivityName=".uiActivities.HomeActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.ftocs.myapp.uiActivities.ProductCategoryActivity" />
+        </activity>
+        <activity
+            android:name=".uiActivities.EditProfileActivity"
+            android:label="EDIT PROFILE"
+            android:parentActivityName=".uiActivities.HomeActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="uiActivities.HomeActivity" />
+        </activity>
+
+        <activity android:name=".uiActivities.OrderHistoryDetailsActivitynew"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".uiActivities.ProductDetailInfoActivity"
+            android:label="@string/title_activity_product_detail_info"
+            android:parentActivityName=".uiActivities.ProductCategoryListActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.ftocs.myapp.uiActivities.ProductCategoryListActivity" />
+        </activity>
+        <activity
+            android:name=".uiActivities.ProductBookingActivity"
+            android:label="@string/title_activity_product_booking"
+            android:parentActivityName=".uiActivities.ProductDetailInfoActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.ftocs.myapp.uiActivities.ProductDetailInfoActivity" />
+        </activity>
+        <activity
+            android:name=".uiActivities.OrderHistoryActivity"
+            android:label="@string/title_activity_order_history"
+            android:parentActivityName=".uiActivities.HomeActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.ftocs.myapp.uiActivities.HomeActivity" />
+        </activity>
+        <activity
+            android:name=".uiActivities.OrderHistoryDetailActivity"
+            android:label="OrderHistoryDetailActivity"
+            android:parentActivityName=".uiActivities.HomeActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.ftocs.myapp.uiActivities.OrderHistoryActivity" />
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/apikey"/>
+    </application>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+</manifest>
