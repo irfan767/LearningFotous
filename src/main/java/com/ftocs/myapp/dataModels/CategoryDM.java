@@ -10,7 +10,7 @@ public class CategoryDM{
 	@SerializedName("IsSuccess")
 	private boolean isSuccess;
 
-	@SerializedName("List")
+	@SerializedName("Listt")
 	private List<ListItem> list;
 
 	@SerializedName("$id")
